@@ -1,0 +1,493 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"5E6D8FC903BB"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"5E6D8FC903BD"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list
+	    (object Class "User"
+		quid       	"5E6D8FD001D5"
+		stereotype 	"Actor")
+	    (object UseCase "Upload Dataset"
+		quid       	"5E6D8FD702BE")
+	    (object UseCase "Run Genetic Algorithm"
+		quid       	"5E6D8FE2016E")
+	    (object UseCase "Run Bat Algorithm"
+		quid       	"5E6D8FF40002")
+	    (object UseCase "Run BEE Algorithm"
+		quid       	"5E6D900103A4")
+	    (object UseCase "Upload Test Data And Predict"
+		quid       	"5E6D900E01C3")
+	    (object UseCase "View Accuracy"
+		quid       	"5E6D90340351")
+	    (object UseCase "Exit"
+		quid       	"5E6D904100A0")
+	    (object Association "$UNNAMED$0"
+		quid       	"5E6D9050027B"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"5E6D9051026B"
+			supplier   	"Use Case View::Run Genetic Algorithm"
+			quidu      	"5E6D8FE2016E"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"5E6D9051026C"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6D8FD001D5")))
+	    (object Association "$UNNAMED$3"
+		quid       	"5E6D90540372"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"5E6D905502F9"
+			supplier   	"Use Case View::Run Bat Algorithm"
+			quidu      	"5E6D8FF40002"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"5E6D905502FA"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6D8FD001D5")))
+	    (object Association "$UNNAMED$6"
+		quid       	"5E6D90570337"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"5E6D905900E9"
+			supplier   	"Use Case View::Run BEE Algorithm"
+			quidu      	"5E6D900103A4"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"5E6D905900EA"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6D8FD001D5")))
+	    (object Association "$UNNAMED$9"
+		quid       	"5E6D905B0254"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"5E6D905C02E1"
+			supplier   	"Use Case View::Upload Test Data And Predict"
+			quidu      	"5E6D900E01C3"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"5E6D905C02E2"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6D8FD001D5")))
+	    (object Association "$UNNAMED$12"
+		quid       	"5E6D905E037D"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$13"
+			quid       	"5E6D90600042"
+			supplier   	"Use Case View::View Accuracy"
+			quidu      	"5E6D90340351"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$14"
+			quid       	"5E6D90600043"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6D8FD001D5")))
+	    (object Association "$UNNAMED$15"
+		quid       	"5E6D90620135"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$16"
+			quid       	"5E6D906301D2"
+			supplier   	"Use Case View::Exit"
+			quidu      	"5E6D904100A0"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$17"
+			quid       	"5E6D906301D3"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6D8FD001D5")))
+	    (object Association "$UNNAMED$18"
+		quid       	"5E6D906701CB"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$19"
+			quid       	"5E6D90680322"
+			supplier   	"Use Case View::Upload Dataset"
+			quidu      	"5E6D8FD702BE"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$20"
+			quid       	"5E6D90680323"
+			supplier   	"Use Case View::User"
+			quidu      	"5E6D8FD001D5"))))
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"5E6D8FCA0010"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object UseCaseView "Use Case View::Run Genetic Algorithm" @1
+			location   	(1584, 368)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(1584, 506)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Run Genetic Algorithm")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6D8FE2016E"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Run Bat Algorithm" @2
+			location   	(1584, 624)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(1584, 762)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Run Bat Algorithm")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6D8FF40002"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Run BEE Algorithm" @3
+			location   	(1600, 880)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(1600, 1018)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Run BEE Algorithm")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6D900103A4"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Upload Test Data And Predict" @4
+			location   	(1632, 1136)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(1632, 1274)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Upload Test Data And Predict")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6D900E01C3"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::View Accuracy" @5
+			location   	(1632, 1376)
+			label      	(object ItemLabel
+			    Parent_View 	@5
+			    location   	(1632, 1514)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"View Accuracy")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6D90340351"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Exit" @6
+			location   	(1632, 1616)
+			label      	(object ItemLabel
+			    Parent_View 	@6
+			    location   	(1632, 1754)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Exit")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6D904100A0"
+			height     	118
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Use Case View::User" @7
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(736, 816)
+			label      	(object ItemLabel
+			    Parent_View 	@7
+			    location   	(736, 976)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	327
+			    justify    	0
+			    label      	"User")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6D8FD001D5"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$0" @8
+			location   	(1083, 629)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6D9050027B"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @9
+				Parent_View 	@8
+				location   	(347, -187)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D9051026B"
+				client     	@8
+				supplier   	@1
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @10
+				Parent_View 	@8
+				location   	(347, -187)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D9051026C"
+				client     	@8
+				supplier   	@7
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$3" @11
+			location   	(1133, 722)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6D90540372"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$4" @12
+				Parent_View 	@11
+				location   	(397, -94)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D905502F9"
+				client     	@11
+				supplier   	@2
+				line_style 	0)
+			    (object RoleView "$UNNAMED$5" @13
+				Parent_View 	@11
+				location   	(397, -94)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D905502FA"
+				client     	@11
+				supplier   	@7
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$6" @14
+			location   	(1140, 843)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6D90570337"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$7" @15
+				Parent_View 	@14
+				location   	(404, 27)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D905900E9"
+				client     	@14
+				supplier   	@3
+				line_style 	0)
+			    (object RoleView "$UNNAMED$8" @16
+				Parent_View 	@14
+				location   	(404, 27)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D905900EA"
+				client     	@14
+				supplier   	@7
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$9" @17
+			location   	(1157, 964)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6D905B0254"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$10" @18
+				Parent_View 	@17
+				location   	(421, 148)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D905C02E1"
+				client     	@17
+				supplier   	@4
+				line_style 	0)
+			    (object RoleView "$UNNAMED$11" @19
+				Parent_View 	@17
+				location   	(421, 148)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D905C02E2"
+				client     	@17
+				supplier   	@7
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$12" @20
+			location   	(1166, 1083)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6D905E037D"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$13" @21
+				Parent_View 	@20
+				location   	(430, 267)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D90600042"
+				client     	@20
+				supplier   	@5
+				line_style 	0)
+			    (object RoleView "$UNNAMED$14" @22
+				Parent_View 	@20
+				location   	(430, 267)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D90600043"
+				client     	@20
+				supplier   	@7
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$15" @23
+			location   	(1179, 1211)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6D90620135"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$16" @24
+				Parent_View 	@23
+				location   	(443, 395)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D906301D2"
+				client     	@23
+				supplier   	@6
+				line_style 	0)
+			    (object RoleView "$UNNAMED$17" @25
+				Parent_View 	@23
+				location   	(443, 395)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D906301D3"
+				client     	@23
+				supplier   	@7
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Upload Dataset" @26
+			location   	(1568, 112)
+			label      	(object ItemLabel
+			    Parent_View 	@26
+			    location   	(1568, 250)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"Upload Dataset")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"5E6D8FD702BE"
+			height     	118
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$18" @27
+			location   	(1107, 499)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5E6D906701CB"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$19" @28
+				Parent_View 	@27
+				location   	(371, -317)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D90680322"
+				client     	@27
+				supplier   	@26
+				line_style 	0)
+			    (object RoleView "$UNNAMED$20" @29
+				Parent_View 	@27
+				location   	(371, -317)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5E6D90680323"
+				client     	@27
+				supplier   	@7
+				line_style 	0)))))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"5E6D8FC903BC"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"5E6D8FC903BE"
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"5E6D8FC903C2"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"5E6D8FC903BE"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"5E6D8FCA000F"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"5E6D8FC903BF"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"5E6D8FC903C1"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"5E6D8FC903C0"))
